@@ -12,7 +12,7 @@ COMPLETED:
 •	The Website takes Car Registration Number and Email from Car Owner for security.
 •	The Website takes Email from User for Security.
 
-TO BE IMPLEMENTED:
+TO BE IMPLEMENTED/FUTURE SCOPE:
 •	Additional information will be included to increase Security, like Licence Number, etc.
 •	Maps will be made accessible for both passenger and car owner, such that Real Time Location can be seen.
 •	A Passenger will send a Request for the Car Owner so that he can use his car for Carpool, and the Car Owner can Accept/Reject his Request based on the User Information provided.
