@@ -1,0 +1,22 @@
+SUMMARY
+Team: CODE DIGGERS
+CARPOOL WEBSITE
+
+COMPLETED:
+•	The Carpool website is up and running.
+•	The Car Owner and Passenger Information gets successfully linked to the database from the “Registration” Page.
+•	“Logging In” page is working successfully.
+•	The Driver Location and User Location can be seen.
+•	The Source and Destination for both User and Car Owner is linked to the Database after the user is Logged in.
+•	The Passenger is assigned to the corresponding Car Owner with similar Source and Destination.
+•	The Website takes Car Registration Number and Email from Car Owner for security.
+•	The Website takes Email from User for Security.
+
+TO BE IMPLEMENTED:
+•	Additional information will be included to increase Security, like Licence Number, etc.
+•	Maps will be made accessible for both passenger and car owner, such that Real Time Location can be seen.
+•	A Passenger will send a Request for the Car Owner so that he can use his car for Carpool, and the Car Owner can Accept/Reject his Request based on the User Information provided.
+•	User History of Previous Carpool Travel will be Provided from the Database.
+
+
+
