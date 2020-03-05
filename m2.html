@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ 
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/qdxayapl4jql4j47pmgkzzqgee9oce12/map_load?v=1.3"></script>
+    <script src="jquery-2.1.4.js;  "></script>
+    <style>
+        #firstmap
+        {
+            width: 300px;
+            height: 450px;
+        }
+    </style>
+<body>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+<div id="firstmap"></div>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+        var myLat= position.coords.Latitude;
+        var myLong=position.coords.Longitde;
+        var map=new MapmyIndia.Map("firstmap",{ center:[position.coords.latitude,position.coords.longitude],zoomControl: true,hybrid:true });
+}
+
+    
+</script>
+</body>
+
+</html>

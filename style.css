@@ -1,0 +1,203 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+  background-image: url(car.jpg) ;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+nav{
+  background: linear-gradient(to left,rgba(0,128,128,1),rgba(0,128,128,0.3));
+  height: 80px;
+  width: 100%;
+  background-color: white;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.custom-select
+{
+  background:none;
+  border:none;
+  color: #fff;
+  font-family: montserrat;
+  font-size: 16px;
+
+}
+.custom-select:hover
+{
+   background: none;
+    color: #0082e6;
+}
+.id
+{
+  color: #000;
+}
+ .leftside, .rightside
+{
+  height: 100vh;
+  font-family: 'K2D', sans-serif;
+}
+ .leftside
+{
+  background-color: rgba(0,0,0,0.85);
+  width: 40%;
+  float: left;
+}
+ .rightside
+{
+  background-color: rgba(0,0,0,0.5);
+  width: 60%;
+  float: right;
+}
+.container form
+{
+  background: none;
+  padding: 100px;
+  width: 100%;
+  height: 70px;
+  font-family: 'K2D', sans-serif;
+  
+}
+form div
+{
+  padding-bottom: 20px;
+  
+}
+form #l1
+{
+  padding: 30px;
+  color: #fff;
+}
+form select
+{
+  background: none;
+  border :none;
+  border-bottom: 2px solid cyan;
+  color: #fff;
+}
+form #l2
+{
+  padding-top: 20px;
+  padding-right: 15px;
+  color:#fff;
+}
+button
+{
+  font-family: 'K2D', sans-serif;
+  transform: translate(100px,0px);
+  background: none;
+  border: none;
+  border-bottom: 2px solid cyan;
+  border-radius: 24px;
+  padding: 5px;
+  color: white; 
+  cursor: pointer;
+
+}
+button:hover
+{
+  background-color: rgb(0,128,128);
+}
+
+#popup
+{
+ display: none;
+ border: 2px solid cyan;
+ background: rgba(0,125,125,0.9);
+ margin: 20px 100px;
+ height: 300px;
+ 
+ }
+ #firstmap
+ {
+  padding: 10px;
+  margin: 40px 200px;
+  border-radius: 10px;
+  width: 500px;
+  height: 400px;
+ }
